@@ -10,7 +10,8 @@ namespace Phoneword
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			//MainPage = new MainPage();
+			MainPage = new FirstPage();
 		}
 
 		protected override void OnStart()
