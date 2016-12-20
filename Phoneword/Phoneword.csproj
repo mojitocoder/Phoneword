@@ -38,6 +38,9 @@
     <EmbeddedResource Include="SecondPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThirdPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -54,6 +57,9 @@
     </Compile>
     <Compile Include="SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdPage.xaml.cs">
+      <DependentUpon>ThirdPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
