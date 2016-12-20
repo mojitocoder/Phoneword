@@ -13,7 +13,8 @@ namespace Phoneword
 			//MainPage = new MainPage(); //Call phone number page
 			//MainPage = new FirstPage(); //StackLayout page
 			//MainPage = new SecondPage(); //Grid page
-			MainPage = new ThirdPage(); //AbsoluteLayout page
+			//MainPage = new ThirdPage(); //AbsoluteLayout page
+			MainPage = new FourthPage(); //ResourceDictionary page, i.e. XAML's equivalent of CSS
 		}
 
 		protected override void OnStart()
