@@ -15,7 +15,19 @@ namespace Phoneword
 			//MainPage = new SecondPage(); //Grid page
 			//MainPage = new ThirdPage(); //AbsoluteLayout page
 			//MainPage = new FourthPage(); //ResourceDictionary page, i.e. XAML's equivalent of CSS
-			MainPage = new SliderTransformsPage();
+			//MainPage = new SliderTransformsPage();
+
+			//MainPage = new ListViewDemo();
+
+			var tabs = new TabbedPage
+			{
+				Title = "Some Tabs",
+				Icon = ""
+			};
+			tabs.Children.Add(new MainPage { Title = "Phone" });
+			tabs.Children.Add(new ListViewDemo { Title = "Colour" });
+			tabs.Children.Add(new SliderTransformsPage { Title = "Transform" });
+			MainPage = tabs;
 		}
 
 		protected override void OnStart()

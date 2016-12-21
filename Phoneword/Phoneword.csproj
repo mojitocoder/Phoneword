@@ -47,6 +47,9 @@
     <EmbeddedResource Include="SliderTransformsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListViewDemo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -73,6 +76,11 @@
     <Compile Include="SliderTransformsPage.xaml.cs">
       <DependentUpon>SliderTransformsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListViewDemo.xaml.cs">
+      <DependentUpon>ListViewDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NamedColor.cs" />
+    <Compile Include="DoubleToIntConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
