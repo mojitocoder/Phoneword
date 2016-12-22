@@ -24,7 +24,7 @@ namespace Phoneword
 				Title = "Some Tabs",
 				Icon = ""
 			};
-			tabs.Children.Add(new MainPage { Title = "Phone" });
+			tabs.Children.Add(new Clock { Title = "Clock" });
 			tabs.Children.Add(new ListViewDemo { Title = "Colour" });
 			tabs.Children.Add(new SliderTransformsPage { Title = "Transform" });
 			MainPage = tabs;
