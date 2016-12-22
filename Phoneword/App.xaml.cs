@@ -27,6 +27,7 @@ namespace Phoneword
 			tabs.Children.Add(new Clock { Title = "Clock" });
 			tabs.Children.Add(new ListViewDemo { Title = "Colour" });
 			tabs.Children.Add(new SliderTransformsPage { Title = "Transform" });
+			tabs.Children.Add(new ColourPicker { Title = "Colour Picker" });
 			MainPage = tabs;
 		}
 
