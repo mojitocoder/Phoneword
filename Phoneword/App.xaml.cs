@@ -1,5 +1,8 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
+using System.Collections;
+using System.Collections.Generic;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Phoneword
@@ -34,6 +37,11 @@ namespace Phoneword
 		protected override void OnStart()
 		{
 			// Handle when your app starts
+
+
+			var stocks = new StockListing().ListStocks();
+
+			var x = stocks;
 		}
 
 		protected override void OnSleep()
