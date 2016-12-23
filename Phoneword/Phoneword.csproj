@@ -58,6 +58,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\StocksNASDAQ.txt" />
     <EmbeddedResource Include="Resources\StocksNYSE.txt" />
+    <EmbeddedResource Include="ListOfStocks.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -98,6 +101,9 @@
     </Compile>
     <Compile Include="ColourPickerViewModel.cs" />
     <Compile Include="Services\StockListing.cs" />
+    <Compile Include="ListOfStocks.xaml.cs">
+      <DependentUpon>ListOfStocks.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

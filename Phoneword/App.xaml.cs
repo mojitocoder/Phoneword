@@ -27,9 +27,10 @@ namespace Phoneword
 				Title = "Some Tabs",
 				Icon = ""
 			};
+			tabs.Children.Add(new ListOfStocks { Title = "Stocks"});
 			tabs.Children.Add(new Clock { Title = "Clock" });
-			tabs.Children.Add(new ListViewDemo { Title = "Colours" });
-			tabs.Children.Add(new SliderTransformsPage { Title = "Transform" });
+			//tabs.Children.Add(new ListViewDemo { Title = "Colours" });
+			//tabs.Children.Add(new SliderTransformsPage { Title = "Transform" });
 			tabs.Children.Add(new ColourPicker { Title = "Colour Picker" });
 			MainPage = tabs;
 		}
@@ -39,9 +40,7 @@ namespace Phoneword
 			// Handle when your app starts
 
 
-			var stocks = new StockListing().ListStocks();
 
-			var x = stocks;
 		}
 
 		protected override void OnSleep()
